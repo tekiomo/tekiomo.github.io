@@ -1,0 +1,35 @@
+title: テキオモの遊び場
+lang: ja_JP
+author: tekiomo
+description: こんにちは、適当な思いつきということでテキオモです
+google_analytics: UA-307397-29
+url: http://tekiomo.com/
+canonical_url: http://tekiomo.com/
+layout: page
+baseurl: ""
+image:
+  path: https://avatars3.githubusercontent.com/u/22626
+  width: 460
+  height: 460
+avatar: https://avatars3.githubusercontent.com/u/22626
+permalink: /blog/:title/
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+sass:
+  style: :compressed
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+blog:
+  name: 適当な思いつきで書くブログ
+  description: テキオモの記憶の角に追いやられそうな出来事を書き連ねます

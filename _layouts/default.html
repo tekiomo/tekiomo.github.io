@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {% seo %}
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="/feed.xml">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/jekyll-pygments-themes/github.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        if (!$navbarBurgers.length) {
+            return;
+        }
+        $navbarBurgers.forEach(function ($el) {
+            $el.addEventListener('click', function () {
+                var target = $el.dataset.target;
+                var $target = document.getElementById(target);
+                $el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+    });
+    </script>
+  </head>
+  <body>
+    {% include analytics.html %}
+    <div class="header">
+      <div class="container">
+        <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+              <img src="{{ site.avatar }}" alt="{{ site.title }}">
+            </a>
+            <button class="button navbar-burger is-white" data-target="main-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <div class="navbar-menu" id="main-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="/blog/">
+                blog
+              </a>
+              <a class="navbar-item" href="/about">
+                about
+              </a>
+            </div>
+            <div class="navbar-end">
+              <a class="navbar-item" href="https://github.com/tekiomo/tekiomo.github.io" target="_blank">
+                <span class="icon" style="color: #333;">
+                  <i class="fa fa-lg fa-github"></i>
+                </span>
+              </a>
+              <a class="navbar-item" href="https://twitter.com/tekiomo" target="_blank">
+                <span class="icon" style="color: #55acee;">
+                  <i class="fa fa-lg fa-twitter"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div id="main">
+      {{ content }}
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <a href="/" class="has-text-grey-dark">{{ site.title }}</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
