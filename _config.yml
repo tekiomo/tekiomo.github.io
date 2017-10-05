@@ -3,8 +3,8 @@ lang: ja_JP
 author: tekiomo
 description: こんにちは、適当な思いつきということでテキオモです
 google_analytics: UA-307397-29
-url: http://tekiomo.com/
-canonical_url: http://tekiomo.com/
+url: https://tekiomo.com
+canonical_url: https://tekiomo.com/
 layout: page
 baseurl: ""
 image:
