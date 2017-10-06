@@ -12,7 +12,7 @@ permalink: /about
 * Gnome3
 
 ## 所属
-[ツキノワ株式会社](https://tsukinowa.jp/)でソフトウェアエンジニアをしています
+[ツキノワ株式会社](http://tsukinowa.jp/)でソフトウェアエンジニアをしています
 
 ### 主に書いているもの
 * JavaScript
