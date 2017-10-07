@@ -10,23 +10,7 @@
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/css/jekyll-pygments-themes/github.css">
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-        if (!$navbarBurgers.length) {
-            return;
-        }
-        $navbarBurgers.forEach(function ($el) {
-            $el.addEventListener('click', function () {
-                var target = $el.dataset.target;
-                var $target = document.getElementById(target);
-                $el.classList.toggle('is-active');
-                $target.classList.toggle('is-active');
-
-            });
-        });
-    });
-    </script>
+    <script src="/site.js"></script>
   </head>
   <body>
     {% include analytics.html %}

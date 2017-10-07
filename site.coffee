@@ -1,0 +1,4 @@
+---
+---
+
+{% include coffeescript/main.coffee %}
