@@ -3,7 +3,7 @@ layout: default
 ---
 {% include blog-title.html %}
 <div class="container">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
   <section class="section">
     <div class="card">
       <div class="card-content">
@@ -28,4 +28,24 @@ layout: default
     </div>
   </section>
   {% endfor %}
+</div>
+
+<div class="container">
+  <nav class="pagination is-medium" role="navigation" aria-label="pagination">
+    <ul class="pagination-list">
+      {% if paginator.previous_page %}
+        <li><a class="pagination-link" aria-label="{{ paginator.previous_page }}ページへ" href="{{ paginator.previous_page_path }}">前へ</a></li>
+      {% endif %}
+      {% for i in (1..paginator.total_pages) %}
+        {% assign path = '/blog/page' | append: i %}
+        {% if i == 1 %}
+          {% assign path = '/blog/' %}
+        {% endif %}
+        <li><a class="pagination-link{% if i == paginator.page %} is-current{% endif%}" aria-label="{{ i }}ページへ" href="{{ path }}">{{ i }}</a></li>
+      {% endfor %}
+      {% if paginator.next_page %}
+        <li><a class="pagination-link" aria-label="{{ paginator.next_page }}ページへ" href="{{ paginator.next_page_path }}">次へ</a></li>
+      {% endif %}
+    </ul>
+  </nav>
 </div>

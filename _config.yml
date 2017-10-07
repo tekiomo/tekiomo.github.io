@@ -25,6 +25,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-coffeescript
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -34,3 +35,5 @@ exclude:
 blog:
   name: 適当な思いつきで書くブログ
   description: テキオモの記憶の角に追いやられそうな出来事を書き連ねます
+paginate: 10
+paginate_path: "blog/page:num"

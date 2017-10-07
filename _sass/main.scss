@@ -9,6 +9,9 @@ $primary: #2c3e50;
 $dark-primary: #1a242f;
 $link: $blue;
 
+$pagination-current-background-color: $primary;
+$pagination-current-border-color: $primary;
+
 @import "bulma/bulma";
 
 body {
@@ -54,7 +57,6 @@ body {
 
 #main {
   margin-top: 52px;
-  min-height: calc(100vh - 168px - 52px);
 }
 
 .hero {
@@ -75,6 +77,7 @@ body {
 .footer {
   background: #e9f1f1;
   border-top: #95a5a6;
+  margin-top: 100px;
 
   a:hover {
     text-decoration: underline;
@@ -96,5 +99,20 @@ pre {
     border: none;
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+.pagination {
+  .pagination-link {
+    color: $primary;
+
+    &.is-current {
+      color: $white;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
   }
 }
