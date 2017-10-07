@@ -4,7 +4,9 @@
   "description": "--- layout: page permalink: / ---",
   "main": "index.md",
   "scripts": {
-    "test": "yarn run lint:stylelint",
+    "test": "yarn run lint",
+    "lint": "yarn run lint:stylelint && yarn run lint:coffeelint",
+    "lint:coffeelint": "coffeelint _includes/coffeescript/*",
     "lint:stylelint": "stylelint _sass/*.scss"
   },
   "repository": {
@@ -23,6 +25,7 @@
   },
   "homepage": "https://github.com/tekiomo/tekiomo.github.io#readme",
   "devDependencies": {
+    "coffeelint": "^2.0.6",
     "stylelint": "^8.2.0",
     "stylelint-config-standard": "^17.0.0"
   }
