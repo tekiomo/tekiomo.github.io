@@ -1,6 +1,4 @@
 ---
-layout: page
-permalink: /
 ---
 
 [![CircleCI](https://circleci.com/gh/tekiomo/tekiomo.github.io.svg?style=svg)](https://circleci.com/gh/tekiomo/tekiomo.github.io)

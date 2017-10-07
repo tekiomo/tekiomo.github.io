@@ -5,7 +5,7 @@ description: こんにちは、適当な思いつきということでテキオ�
 google_analytics: UA-307397-29
 url: https://tekiomo.com
 canonical_url: https://tekiomo.com/
-layout: page
+layout: default
 baseurl: ""
 image:
   path: https://avatars3.githubusercontent.com/u/22626
@@ -21,11 +21,11 @@ kramdown:
 sass:
   style: :compressed
 plugins:
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-coffeescript
+  - jekyll-feed
   - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -37,3 +37,9 @@ blog:
   description: テキオモの記憶の角に追いやられそうな出来事を書き連ねます
 paginate: 10
 paginate_path: "blog/page:num"
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
