@@ -30,8 +30,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
-  - README.md
   - CNAME
+  - node_modules
 blog:
   name: 適当な思いつきで書くブログ
   description: テキオモの記憶の角に追いやられそうな出来事を書き連ねます
