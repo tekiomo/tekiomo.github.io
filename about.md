@@ -2,6 +2,8 @@
 title: About
 description: tekiomoについて
 permalink: /about
+hero:
+  color: is-success
 ---
 
 ## 主に使っているもの

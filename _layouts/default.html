@@ -1,7 +1,20 @@
 ---
 layout: base
 ---
-<section class="hero is-default is-large">
+<section class="hero
+{% assign color = 'is-info' %}
+{% assign height = 'is-large' %}
+{% if page.hero  %}
+  {% if page.hero.color  %}
+    {% assign color = page.hero.color %}
+  {% endif %}
+  {% if page.hero.height  %}
+    {% assign height = page.hero.height %}
+  {% endif %}
+{% endif%}
+
+{{ color }} {{ height }}
+">
   <div class="hero-body">
     <div class="container has-text-centered">
       <p class="title">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</p>
