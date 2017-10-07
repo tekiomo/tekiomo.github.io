@@ -1,0 +1,23 @@
+<section class="section">
+  <div class="card">
+    <div class="card-content">
+      <p class="title">
+        <a href="{{ post.url }}" class="has-text-grey-dark">{{ post.title }}</a>
+      </p>
+      <p class="subtitle has-text-grey">
+        {{ post.date | date: "%Y年%m月%d日" }}
+      </p>
+      <div class="content">
+        {{ post.excerpt }}
+      </div>
+    </div>
+    <footer class="card-footer">
+      <p class="card-footer-item">
+        <a href="{{ post.url }}" class="button block is-white">
+          <i class="fa fa-chevron-right"></i>
+          さらに読む
+        </a>
+      </p>
+    </footer>
+  </div>
+</section>
