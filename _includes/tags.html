@@ -6,6 +6,6 @@
 {% if tags %}
   {% for tag in tags %}
   {% if forloop.first %}<div class="tags">{% endif %}
-    <a href="/blog/tags/{{ tag | downcase }}" rel="tag" class="tag is-primary is-medium">{{ tag }}</a>{% if forloop.last %}</div>{% endif %}
+    <a href="/blog/tags/{{ tag | downcase | replace: ' ', '' }}" rel="tag" class="tag is-primary is-medium">{{ tag }}</a>{% if forloop.last %}</div>{% endif %}
   {% endfor %}
 {% endif %}
