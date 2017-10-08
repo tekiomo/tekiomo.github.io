@@ -6,6 +6,7 @@ $red: #e74c3c;
 $green: #18bc9c;
 $yellow: #f39c12;
 $red: #ef6717;
+$orange: #f38017;
 $primary: #2c3e50;
 $dark-primary: #1a242f;
 $default: #798c8e;
@@ -62,7 +63,8 @@ body {
 }
 
 .hero {
-  &.is-default {
+  &.is-default,
+  &.is-orange {
     a,
     .title,
     .subtitle {
@@ -72,6 +74,16 @@ body {
 
   &.is-default {
     background: $default;
+  }
+
+  &.is-orange {
+    background: $orange;
+  }
+
+  &.is-small {
+    .hero-body {
+      padding: 1rem 1.5rem;
+    }
   }
 }
 

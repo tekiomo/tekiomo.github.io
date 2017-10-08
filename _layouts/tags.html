@@ -2,10 +2,13 @@
 layout: base
 ---
 {% include blog-title.html %}
-<div class="container">
-  <section class="section">
-    <h1 class="title">「{{ page.title}}」に関する記事</h1>
-  </section>
+<div class="hero is-orange">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <p class="title is-4">"{{ page.title}}"に関する記事</p>
+    </div>
+  </div>
+</div>
 {% for post in site.posts %}
   {% for tag in post.tags %}
     {% if tag == page.title %}
@@ -13,4 +16,3 @@ layout: base
     {% endif %}
   {% endfor %}
 {% endfor %}
-</div>
