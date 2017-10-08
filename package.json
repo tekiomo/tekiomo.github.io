@@ -1,7 +1,7 @@
 {
-  "name": "tekiomo.github.io",
+  "name": "tekiomo.com",
   "version": "1.0.0",
-  "description": "--- layout: page permalink: / ---",
+  "description": "",
   "main": "index.md",
   "scripts": {
     "test": "yarn run lint",
@@ -14,8 +14,7 @@
     "url": "git+https://github.com/tekiomo/tekiomo.github.io.git"
   },
   "keywords": [
-    "GitHub",
-    "Pages",
+    "GitHub Pages",
     "Bulma"
   ],
   "author": "tekiomo@gmail.com",
@@ -23,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/tekiomo/tekiomo.github.io/issues"
   },
-  "homepage": "https://github.com/tekiomo/tekiomo.github.io#readme",
+  "homepage": "https://tekiomo.com/",
   "devDependencies": {
     "coffeelint": "^2.0.6",
     "stylelint": "^8.2.0",
