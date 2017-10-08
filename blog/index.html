@@ -2,11 +2,9 @@
 layout: base
 ---
 {% include blog-title.html %}
-<div class="container">
-  {% for post in paginator.posts %}
-    {% include post-summary.html %}
-  {% endfor %}
-</div>
+{% for post in paginator.posts %}
+  {% include post-summary.html %}
+{% endfor %}
 
 <div class="container">
   <nav class="pagination is-medium" role="navigation" aria-label="pagination">

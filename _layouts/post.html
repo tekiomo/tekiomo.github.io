@@ -2,20 +2,32 @@
 layout: base
 ---
 {% include blog-title.html %}
+<div class="hero is-warning">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        <a href="/blog/" class="has-text-white-bis">
+          {{ page.title }}
+        </a>
+      </h1>
+      <p class="subtitle">
+        {{ page.date | date: "%Y年%m月%d日" }}
+      </p>
+    </div>
+  </div>
+</div>
 <div class="container">
   <section class="section">
     <article>
-      <h1 class="title">{{ page.title }}</h1>
-      <p class="subtitle has-text-grey">
-        {{ page.date | date: "%Y年%m月%d日" }}
-      </p>
       <div class="content">
         {{ content }}
       </div>
     </article>
   </section>
+</div>
+<hr>
+<div class="container">
   <section class="section">
-    <hr>
     {% include tags.html %}
   </section>
 </div>
