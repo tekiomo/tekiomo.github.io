@@ -6,9 +6,7 @@ permalink: /
 
 ----
 
-ブログを書いています。
-
-## [{{ site.blog.name }}](https://tekiomo.com/blog/)
+## [ブログ的な何か](https://tekiomo.com/blog/)
 
 ### 最近の投稿
 
@@ -18,7 +16,6 @@ permalink: /
 
 ----
 
-* tekiomo.com はGitHub Pagesで運用しています
-* CSSフレームワークに[Bulma](http://bulma.io/)を使用しています
-* [Cloudflare](https://www.cloudflare.com)を利用してHTTPS化しています
-* coffeelint, stylelint を[CircleCI](https://circleci.com/gh/tekiomo/tekiomo.github.io)で行なっています
+## ChangeLog的な何か
+
+{% include CHANGELOG.md %}

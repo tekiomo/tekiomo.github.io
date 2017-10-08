@@ -1,4 +1,4 @@
-title: テキオモの遊び場
+title: tekiomo
 lang: ja_JP
 author: tekiomo
 description: こんにちは、適当な思いつきということでテキオモです
@@ -27,8 +27,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 exclude:
-  - Gemfile
-  - Gemfile.lock
   - LICENSE
   - CNAME
   - node_modules
