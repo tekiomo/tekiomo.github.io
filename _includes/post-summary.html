@@ -1,23 +1,25 @@
-<section class="section">
-  <div class="card">
-    <div class="card-content">
+<div class="hero is-warning">
+  <div class="hero-body">
+    <div class="container has-text-centered">
       <p class="title">
-        <a href="{{ post.url }}" class="has-text-grey-dark">{{ post.title }}</a>
+        <a href="{{ post.url }}">{{ post.title }}</a>
       </p>
-      <p class="subtitle has-text-grey">
+      <p class="subtitle">
         {{ post.date | date: "%Y年%m月%d日" }}
       </p>
-      <div class="content">
-        {{ post.excerpt }}
-      </div>
     </div>
-    <footer class="card-footer">
-      <p class="card-footer-item">
-        <a href="{{ post.url }}" class="button block is-white">
-          <i class="fa fa-chevron-right"></i>
-          さらに読む
-        </a>
-      </p>
-    </footer>
   </div>
-</section>
+</div>
+<div class="container">
+  <div class="section">
+    <div class="content">
+      {{ post.excerpt }}
+    </div>
+    <p>
+      <a href="{{ post.url }}" class="button block is-white">
+        <i class="fa fa-chevron-right"></i>
+        さらに読む
+      </a>
+    </p>
+  </div>
+</div>

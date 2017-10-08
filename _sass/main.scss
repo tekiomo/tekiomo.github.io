@@ -5,6 +5,7 @@ $blue: #3498db;
 $red: #e74c3c;
 $green: #18bc9c;
 $yellow: #f39c12;
+$red: #ef6717;
 $primary: #2c3e50;
 $dark-primary: #1a242f;
 $default: #798c8e;
@@ -62,12 +63,15 @@ body {
 
 .hero {
   &.is-default {
-    background: $default;
-
+    a,
     .title,
     .subtitle {
       color: #fff;
     }
+  }
+
+  &.is-default {
+    background: $default;
   }
 }
 
