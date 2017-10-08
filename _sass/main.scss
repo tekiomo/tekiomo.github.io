@@ -73,6 +73,12 @@ body {
   &.is-default {
     background: $default;
   }
+
+  &.is-small {
+    .hero-body {
+      padding: 1rem 1.5rem;
+    }
+  }
 }
 
 .footer {
