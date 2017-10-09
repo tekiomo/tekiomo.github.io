@@ -1,3 +1,6 @@
+### 2017/10/09
+* Jekyll buildをテストに追加する
+
 ### 2017/10/07
 * [Cloudflare](https://www.cloudflare.com)でHTTPS化してみる
   * 便利
