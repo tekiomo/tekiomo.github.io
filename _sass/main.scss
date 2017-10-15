@@ -87,6 +87,14 @@ body {
   }
 }
 
+a[href^="https://www.amazon.co.jp/"] {
+  img {
+    display: block;
+    padding: 10px;
+    background: $white;
+  }
+}
+
 .footer {
   background: #e9f1f1;
   border-top: #95a5a6;
