@@ -2,7 +2,7 @@
 permalink: /
 ---
 
-[![CircleCI](https://circleci.com/gh/tekiomo/tekiomo.github.io.svg?style=svg)](https://circleci.com/gh/tekiomo/tekiomo.github.io)
+[![wercker status](https://app.wercker.com/status/fdd0aea8ad5e133afbb932dc04ffde8a/s/master "wercker status")](https://app.wercker.com/project/byKey/fdd0aea8ad5e133afbb932dc04ffde8a)
 
 ----
 

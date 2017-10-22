@@ -1,0 +1,15 @@
+test-bundle:
+  box: ruby
+  steps:
+    - bundle-install
+    - script:
+        name: test
+        command: bundle exec jekyll build
+
+test-npm:
+  box: node:7.10
+  steps:
+    - npm-install
+    - script:
+        name: test
+        code: npm test
