@@ -5,6 +5,10 @@ test-bundle:
     - script:
         name: test
         command: bundle exec jekyll build
+  after-steps:
+    - slack-notifier:
+        url: $SLACK_WEBHOOK_URL
+        channel: dev
 
 test-npm:
   box: node:7.10
@@ -13,3 +17,7 @@ test-npm:
     - script:
         name: test
         code: npm test
+  after-steps:
+    - slack-notifier:
+        url: $SLACK_WEBHOOK_URL
+        channel: dev
