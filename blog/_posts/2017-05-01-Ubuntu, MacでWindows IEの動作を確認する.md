@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Ubuntu, MacでWindows IEの動作を確認する
 tags: [Windows, Ubuntu, Mac, IE, VirtualBox]
 ---
 

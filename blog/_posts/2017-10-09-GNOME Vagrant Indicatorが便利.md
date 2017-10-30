@@ -1,6 +1,5 @@
 ---
 layout: post
-title: GNOME Vagrant Indicatorが便利
 tags: [GNOME Shell, Vagrant]
 ---
 

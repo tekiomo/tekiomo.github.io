@@ -1,6 +1,5 @@
 ---
 layout: post
-title: FirefoxとChromeのCSP違反時の報告内容を調べてみた
 tags: [HTTP]
 ---
 内容がChromeの方が多かったり、同じキーでも値が異なっていたり。

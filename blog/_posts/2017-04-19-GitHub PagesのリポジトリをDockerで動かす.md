@@ -1,6 +1,5 @@
 ---
 layout: post
-title: GitHub PagesのリポジトリをDockerで動かす
 tags: [GitHub Pages, Docker]
 ---
 

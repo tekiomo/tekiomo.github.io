@@ -1,6 +1,5 @@
 ---
 layout: post
-title: jekyll-coffeescriptで unexpected - エラーをある程度解決する
 tags: [CoffeeScript, GitHub Pages]
 ---
 

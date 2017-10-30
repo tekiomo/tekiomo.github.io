@@ -1,6 +1,5 @@
 ---
 layout: post
-title: JasmineでUserAgentを偽装する
 tags: [JavaScript]
 ---
 
