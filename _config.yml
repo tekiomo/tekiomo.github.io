@@ -1,9 +1,12 @@
-title: tekiomo
+title: 適当な思いつきということでテキオモです
 lang: ja_JP
 author: tekiomo
-description: こんにちは、適当な思いつきということでテキオモです
+description: 気が向いた時に適当にやっています
 google_analytics: UA-307397-29
 url: https://tekiomo.com
+twitter:
+  username: tekiomo
+logo: https://avatars3.githubusercontent.com/u/22626
 canonical_url: https://tekiomo.com/
 layout: default
 baseurl: ""
