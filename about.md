@@ -17,6 +17,12 @@ hero:
 
 ### 主に書いているもの
 * JavaScript
-* TypeScript
+
+### たまに書いているもの
+* Dockerfile, docker-compose.yml
+* Go
 * PHP
+* Python
 * SCSS
+* Shell Script
+* TypeScript
