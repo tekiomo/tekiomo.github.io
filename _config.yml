@@ -35,7 +35,7 @@ exclude:
   - node_modules
 blog:
   name: 適当な思いつきで書くブログ
-  description: テキオモの記憶の角に追いやられそうな出来事を書き連ねます
+  description: テキオモの記憶の片隅に追いやられそうな出来事を書き連ねます
 paginate: 10
 paginate_path: "blog/page:num"
 defaults:
