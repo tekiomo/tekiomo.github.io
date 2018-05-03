@@ -10,19 +10,18 @@ hero:
 * Ubuntu
 * Vim
 * Zsh
-* Gnome3
-
-## 所属
-[ツキノワ株式会社](http://tsukinowa.jp/)でソフトウェアエンジニアをしています
+* GNOME3
 
 ### 主に書いているもの
 * JavaScript
 
 ### たまに書いているもの
-* Dockerfile, docker-compose.yml
 * Go
 * PHP
 * Python
 * SCSS
 * Shell Script
 * TypeScript
+
+## 働いているところ
+[ツキノワ株式会社](http://tsukinowa.jp/)
