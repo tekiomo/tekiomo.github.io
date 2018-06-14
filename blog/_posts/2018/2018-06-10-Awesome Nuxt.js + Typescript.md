@@ -11,3 +11,5 @@ Nuxt.js + TypeScriptを書くときに参考にさせていただい(た\|てい
 * [jsonberry/vue-typescript-examples](https://github.com/jsonberry/vue-typescript-examples)
 * [glitchedmob/levizitting.com](https://github.com/glitchedmob/levizitting.com)
 * [AndroidDagashi/androiddagashi.github.io](https://github.com/AndroidDagashi/androiddagashi.github.io)
+* [chanlito/simple-todos](https://github.com/chanlito/simple-todos)
+* [CKGrafico/Frontend-Boilerplates/tree/nuxt-dev](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt-dev)
