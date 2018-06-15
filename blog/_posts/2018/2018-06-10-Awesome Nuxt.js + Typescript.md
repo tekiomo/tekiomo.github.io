@@ -13,3 +13,6 @@ Nuxt.js + TypeScriptを書くときに参考にさせていただい(た\|てい
 * [AndroidDagashi/androiddagashi.github.io](https://github.com/AndroidDagashi/androiddagashi.github.io)
 * [chanlito/simple-todos](https://github.com/chanlito/simple-todos)
 * [CKGrafico/Frontend-Boilerplates/tree/nuxt-dev](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt-dev)
+
+## 参考の参考
+* [nuxt-community/awesome-nuxt](https://github.com/nuxt-community/awesome-nuxt)
