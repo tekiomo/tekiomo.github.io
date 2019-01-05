@@ -1,6 +1,0 @@
-[submodule "css/jekyll-pygments-themes"]
-	path = css/jekyll-pygments-themes
-	url = https://github.com/jwarby/jekyll-pygments-themes
-[submodule "_sass/bulma"]
-	path = _sass/bulma
-	url = https://github.com/jgthms/bulma
