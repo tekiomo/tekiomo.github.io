@@ -1,0 +1,11 @@
+---
+title: "GNOME Vagrant Indicatorが便利"
+date: 2017-10-09T00:00:00+09:00
+tags: [GNOME Shell, Vagrant]
+---
+
+<img alt="GNOME Vagrant Indicator" src="/images/1507515332-gv.png" class="is-pulled-right">
+[GNOME Vagrant Indicator - GNOME Shell Extensions](https://extensions.gnome.org/extension/1269/gnome-vagrant-indicator/)
+
+端末内のVagrantに対してup, halt, sshなどが簡単に実行できる。  
+起動中のVagrantの確認にも利用できるので便利。

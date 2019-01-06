@@ -1,0 +1,38 @@
+---
+title: "「Asltoy USB 充電 ステーション 充電 スタンド 4ポート スマホ 充電器 収納 充電 最大2.4A搭載 iPhone iPod iPad Android スマホ対応 (黒い)」をAmazonで購入した"
+date: 2017-10-16T00:00:00+09:00
+tags: [アイテム]
+---
+
+[![](https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=B074VRW5LB&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL600_&tag=tekiomomono-22)](https://www.amazon.co.jp/gp/product/B074VRW5LB/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B074VRW5LB&linkCode=as2&tag=tekiomomono-22&linkId=28fdbc3fec3afd574cff0685353f1a77)
+![](https://ir-jp.amazon-adsystem.com/e/ir?t=tekiomomono-22&l=am2&o=9&a=B074VRW5LB)
+
+Amazonで[Asltoy USB 充電 ステーション 充電 スタンド 4ポート スマホ 充電器 収納 充電 最大2.4A搭載 iPhone iPod iPad Android スマホ対応 (黒い)](https://www.amazon.co.jp/gp/product/B074VRW5LB/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B074VRW5LB&linkCode=as2&tag=tekiomomono-22&linkId=28fdbc3fec3afd574cff0685353f1a77)を購入したのでそのレビュー。  
+ちなみに1,799円、ポイントで購入した。
+
+## 欲しかった理由
+* iPhone(3GS, 4S)の付属品だった充電器が利用できなくなった
+* 充電したい端末が多く電源周りがごちゃごちゃしてきたので充電ステーションに興味があった
+
+## 良い点
+### スマホを立てるためのしきいが本体とつながっている
+この手の商品は取り外しのきく板でしきられていることが多い。取り外しができると壊れそう、失くしそうなので、つながっているものが欲しかった。購入に至った決め手。
+
+### 安い
+その他の4ポートタイプの充電器は安くても2,000円台だった。
+
+## 悪い点
+### 高周波が発生する(2018/05/21追記)
+充電中にキーンという高い音が発生している(いわゆるコイル鳴き)。充電する端末による模様。  
+静かな部屋では気になるレベルかも知れない。
+
+### 発生する
+* iPhone4S発生
+
+### 発生しない
+* HUAWEI P8 lite
+* Amazon Fire HD 8
+
+
+## 総評
+電源周りがすっきりした。これは買ってよかった。

@@ -1,0 +1,19 @@
+---
+title: "不要になったDockerのブリッジネットワークを削除する"
+date: 2017-07-12T00:00:00+09:00
+tags: [Docker]
+---
+
+```sh
+$ docker network rm \
+  $(docker network ls \
+    | sed 1d \
+    | cut --delimiter=' ' --fields=1)
+```
+
+あんまりよくわかっていない。  
+削除できないものは
+```
+Error response from daemon: bridge is a pre-defined network and cannot be removed
+```
+とかでエラーになるので多分大丈夫なはず。
