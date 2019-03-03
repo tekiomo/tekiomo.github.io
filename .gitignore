@@ -1,6 +1,1 @@
-_site
-.jekyll
-.jekyll-metadata
-.bundle
-.sass-cache
-node_modules
+/public
