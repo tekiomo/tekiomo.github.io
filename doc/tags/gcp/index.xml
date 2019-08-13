@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP on テキオモの部屋</title>
+    <link>https://tekiomo.com/tags/gcp/</link>
+    <description>Recent content in GCP on テキオモの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Oct 2017 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://tekiomo.com/tags/gcp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>dev_appserver.pyでつまづいた</title>
+      <link>https://tekiomo.com/blog/2017/10/27/dev_appserver.py%E3%81%A7%E3%81%A4%E3%81%BE%E3%81%A5%E3%81%84%E3%81%9F/</link>
+      <pubDate>Fri, 27 Oct 2017 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2017/10/27/dev_appserver.py%E3%81%A7%E3%81%A4%E3%81%BE%E3%81%A5%E3%81%84%E3%81%9F/</guid>
+      <description> gcloudをインストールすると、一緒にインストールされるdev_appserver.pyを使うとローカルでの開発用にサーバーを立てられる。
+それを実行したときにちょっとつまづいたのでメモ
+ImportError: No module named &amp;lsquo;setup&amp;rsquo; このエラーはPython2(2.7？)でないと出る模様。Python2.7などを利用することで解決できる。
+google.appengine.tools.devappserver2.wsgi_server.BindError: Unable to bind localhost:8000 すでに8000番ポートを利用していると発生する。
+ただし--port XXXXだけではダメで--admin-port XXXXも指定する。
+# NG $ dev_appserver.py --port 8001 # OK $ dev_appserver.py --port 8001 ./app.yaml --admin_port 8002</description>
+    </item>
+    
+  </channel>
+</rss>

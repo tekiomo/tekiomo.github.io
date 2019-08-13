@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nuxt.js on テキオモの部屋</title>
+    <link>https://tekiomo.com/tags/nuxt.js/</link>
+    <description>Recent content in Nuxt.js on テキオモの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Jun 2018 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://tekiomo.com/tags/nuxt.js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Awesome Nuxt.js &#43; Typescript</title>
+      <link>https://tekiomo.com/blog/2018/06/10/awesome-nuxt.js-&#43;-typescript/</link>
+      <pubDate>Sun, 10 Jun 2018 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2018/06/10/awesome-nuxt.js-&#43;-typescript/</guid>
+      <description> Nuxt.js + TypeScriptを書くときに参考にさせていただい(た|ている)リポジトリ
+(TODO: 都度追加)
+ mika-f/crypto-faucets jsonberry/vue-typescript-examples glitchedmob/levizitting.com AndroidDagashi/androiddagashi.github.io chanlito/simple-todos CKGrafico/Frontend-Boilerplates/tree/nuxt-dev  参考の参考  nuxt-community/awesome-nuxt  </description>
+    </item>
+    
+  </channel>
+</rss>

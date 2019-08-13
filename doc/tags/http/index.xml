@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTTP on テキオモの部屋</title>
+    <link>https://tekiomo.com/tags/http/</link>
+    <description>Recent content in HTTP on テキオモの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Oct 2017 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://tekiomo.com/tags/http/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FirefoxとChromeのCSP違反時の報告内容を調べてみた</title>
+      <link>https://tekiomo.com/blog/2017/10/11/firefox%E3%81%A8chrome%E3%81%AEcsp%E9%81%95%E5%8F%8D%E6%99%82%E3%81%AE%E5%A0%B1%E5%91%8A%E5%86%85%E5%AE%B9%E3%82%92%E8%AA%BF%E3%81%B9%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+      <pubDate>Wed, 11 Oct 2017 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2017/10/11/firefox%E3%81%A8chrome%E3%81%AEcsp%E9%81%95%E5%8F%8D%E6%99%82%E3%81%AE%E5%A0%B1%E5%91%8A%E5%86%85%E5%AE%B9%E3%82%92%E8%AA%BF%E3%81%B9%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
+      <description>内容がChromeの方が多かったり、同じキーでも値が異なっていたり。
+ちなみにIE11はCSPに対応していないので調べていない。
+Firefox 56 Request Header Host: localhost User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 Accept-Language: en-US,en;q=0.5 Accept-Encoding: gzip, deflate Content-Length: 413 Content-Type: application/csp-report Connection: keep-alive  Request Body { &amp;#34;csp-report&amp;#34;: { &amp;#34;blocked-uri&amp;#34;: &amp;#34;https://avatars2.githubusercontent.com&amp;#34;, &amp;#34;document-uri&amp;#34;: &amp;#34;http://localhost/&amp;#34;, &amp;#34;original-policy&amp;#34;: &amp;#34;default-src http://localhost; script-src http://localhost unsafe-inline unsafe-eval; img-src http://localhost; style-src http://localhost unsafe-inline; child-src none; object-src none; report-uri http://localhost/&amp;#34;, &amp;#34;referrer&amp;#34;: &amp;#34;&amp;#34;, &amp;#34;violated-directive&amp;#34;: &amp;#34;img-src http://localhost&amp;#34; } } Chrome 61.0.3163.100 Request Header Accept:*/* Accept-Encoding:gzip, deflate, br Accept-Language:ja-JP,ja;q=0.</description>
+    </item>
+    
+  </channel>
+</rss>

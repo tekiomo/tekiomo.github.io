@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on テキオモの部屋</title>
+    <link>https://tekiomo.com/tags/docker/</link>
+    <description>Recent content in Docker on テキオモの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Jul 2017 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://tekiomo.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>不要になったDockerのブリッジネットワークを削除する</title>
+      <link>https://tekiomo.com/blog/2017/07/12/%E4%B8%8D%E8%A6%81%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9Fdocker%E3%81%AE%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</link>
+      <pubDate>Wed, 12 Jul 2017 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2017/07/12/%E4%B8%8D%E8%A6%81%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9Fdocker%E3%81%AE%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</guid>
+      <description>$ docker network rm \  $(docker network ls \  | sed 1d \  | cut --delimiter=&amp;#39; &amp;#39; --fields=1) あんまりよくわかっていない。
+削除できないものは
+Error response from daemon: bridge is a pre-defined network and cannot be removed  とかでエラーになるので多分大丈夫なはず。</description>
+    </item>
+    
+    <item>
+      <title>docker-composeでDjangoの開発環境をサクッと作成する</title>
+      <link>https://tekiomo.com/blog/2017/05/29/docker-compose%E3%81%A7django%E3%81%AE%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%82%92%E3%82%B5%E3%82%AF%E3%83%83%E3%81%A8%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B/</link>
+      <pubDate>Mon, 29 May 2017 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2017/05/29/docker-compose%E3%81%A7django%E3%81%AE%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%82%92%E3%82%B5%E3%82%AF%E3%83%83%E3%81%A8%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B/</guid>
+      <description>Dockerだけで作りたかったのだけれども、volumeを前提としてdocker build時にmigrateしても、docker runするとmigrateしたファイルがいっさいがっさいなくなってしまうのでdocker-composeで作った。
+ファイル構成は以下のような作りを想定。
+. ./app ./manage.py ./requirements/develop.txt ./Dockerfile ./docker-compose.yml  ./docker-compose.ymlはこんな感じ。
+version: &amp;#39;2&amp;#39; services: web: build: . command: python apps/manage.py runserver 0.0.0.0:8000 --insecure volumes: - .:/code ports: - &amp;#34;8000:8000&amp;#34; ./Dockerfileはこんな感じ。/codeのディレクトリ名は適当に。
+FROM python:3.5 ENV PYTHONUNBUFFERED 1 VOLUME /code WORKDIR /code ADD . /code RUN pip install -r requirements/development.txt \ &amp;amp;&amp;amp; python3 manage.py migrate  初回build後にcreatesuperuserで管理画面ユーザーを作成する。必要なければ省ける。
+$ docker-compose build $ docker-compose run web python3 ./manage.py createsuperuser $ docker-compose up</description>
+    </item>
+    
+    <item>
+      <title>GitHub PagesのリポジトリをDockerで動かす</title>
+      <link>https://tekiomo.com/blog/2017/04/19/github-pages%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92docker%E3%81%A7%E5%8B%95%E3%81%8B%E3%81%99/</link>
+      <pubDate>Wed, 19 Apr 2017 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2017/04/19/github-pages%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92docker%E3%81%A7%E5%8B%95%E3%81%8B%E3%81%99/</guid>
+      <description>madduci/docker-github-pagesでできる。
+GitHub Pagesのリポジトリがあるディレクトリ内で↓を実行する。
+$ docker run --rm -it -p 4000:4000 \  -v &amp;#34;${PWD}&amp;#34;:/site madduci/docker-github-pages serve \  --watch --force_polling --host 0.0.0.0 追記 タイムゾーンを東京にする場合は-eでタイムゾーン情報を渡す。
+docker run -e &amp;#34;TZ=Asia/Tokyo&amp;#34; --rm .</description>
+    </item>
+    
+  </channel>
+</rss>

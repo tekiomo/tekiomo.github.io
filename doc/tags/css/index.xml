@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSS on テキオモの部屋</title>
+    <link>https://tekiomo.com/tags/css/</link>
+    <description>Recent content in CSS on テキオモの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Nov 2017 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://tekiomo.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>stylelintプラグインでdoiuseのチェック</title>
+      <link>https://tekiomo.com/blog/2017/11/07/stylelint%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%A7doiuse%E3%81%AE%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF/</link>
+      <pubDate>Tue, 07 Nov 2017 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2017/11/07/stylelint%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%A7doiuse%E3%81%AE%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF/</guid>
+      <description>doiuseはCSSのスタイルが指定したブラウザでサポートしてくれるかチェックしてくれる。
+doiuseはnpmでも公開されているのでnpm-scriptsなりgulpなりでチェック環境を作れるのだけれども、stylelintのプラグインであるstylelint-no-unsupported-browser-featuresを利用して、stylelintに含めることができるのでやってみた。
+https://github.com/ismay/stylelint-no-unsupported-browser-features
+$ npm i -D stylelint stylelint-no-unsupported-browser-features # stylelint-config-standard を使うなら $ npm i -D stylelint-config-standard ./.stylelintrcはこんな感じ
+# ./.stylelintrc { &amp;#34;extends&amp;#34;: &amp;#34;stylelint-config-standard&amp;#34;, &amp;#34;plugins&amp;#34;: [ &amp;#34;stylelint-no-unsupported-browser-features&amp;#34; ], &amp;#34;rules&amp;#34;: { &amp;#34;plugin/no-unsupported-browser-features&amp;#34;: [true, { &amp;#34;browsers&amp;#34;: [&amp;#34;&amp;gt; 1% in JP&amp;#34;] }] } } 実行はこんな感じ。stylelintの実行と変わらない。
+$ ./node_modules/.bin/stylelint /PATH/TO/CSS/* browsersを含めていると何故かstylelintのプロセスが終了しない。(環境は node v7.10.1, npm 5.5.1)
+./browserslistに定義してあげるととりあえず動いた。
+# ./browserslist &amp;gt; 1% in JP  </description>
+    </item>
+    
+    <item>
+      <title>GitHub PagesでCSSフレームワークBulmaをカスタマイズして使ってみる</title>
+      <link>https://tekiomo.com/blog/2017/10/07/github-pages%E3%81%A7css%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AFbulma%E3%82%92%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA%E3%81%97%E3%81%A6%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</link>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2017/10/07/github-pages%E3%81%A7css%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AFbulma%E3%82%92%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA%E3%81%97%E3%81%A6%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
+      <description> GitHub PagesのリポジトリでCSSフレームワークBulmaをSASSを利用してカスタマイズしたときのメモ
+1. submoduleにjgthms/bulmaを追加 もし_config.ymlでsass.sass_dir(デフォルトは _sass)を独自に指定していたらそのディレクトリを指定する
+$ git submodule add https://github.com/jgthms/bulma _sass/bulma 2. style.scssを作成 Customizing with Sassの「Customizing with Sass」を参考。importのパスだけ注意(sass.sass_dirから見たパスにする)。
+--- --- @import &amp;#34;bulma/sass/utilities/initial-variables&amp;#34;; $blue: #3498db; $red: #e74c3c; $green: #18bc9c; $yellow: #f39c12; $primary: #2c3e50; $dark-primary: #1a242f; $link: $blue; @import &amp;#34;bulma/bulma&amp;#34;;</description>
+    </item>
+    
+    <item>
+      <title>GulpでCSSファイルのセレクタのHTMLタグ名をclass名に置き換える</title>
+      <link>https://tekiomo.com/blog/2017/10/05/gulp%E3%81%A7css%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%BF%E3%81%AEhtml%E3%82%BF%E3%82%B0%E5%90%8D%E3%82%92class%E5%90%8D%E3%81%AB%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%E3%82%8B/</link>
+      <pubDate>Thu, 05 Oct 2017 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2017/10/05/gulp%E3%81%A7css%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%BF%E3%81%AEhtml%E3%82%BF%E3%82%B0%E5%90%8D%E3%82%92class%E5%90%8D%E3%81%AB%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%E3%82%8B/</guid>
+      <description>独自タグfooをclass.fooに置き換えたかったので、through2を使って書いてみた
+var gulp = require(&amp;#39;gulp&amp;#39;); var css = require(&amp;#39;css&amp;#39;) var through2 = require(&amp;#39;through2&amp;#39;) gulp.task(&amp;#39;imagemin&amp;#39;, function(){ return gulp.src([&amp;#39;/PATH/TO/CSSFILE&amp;#39;]) .pipe(through2.obj(function (file, enc, callback) { var re = new RegExp(&amp;#39;(^|\\s+)([a-z]+(?=(?:\\s+|:|\\.|\\s*(?:$|,))))&amp;#39;, &amp;#39;g&amp;#39;) var parsed = css.parse(file.contents.toString(&amp;#39;utf8&amp;#39;)) for (var i in parsed.stylesheet.rules) { for (var j in parsed.stylesheet.rules[i].selectors) { parsed.stylesheet.rules[i].selectors[j] = parsed.stylesheet.rules[i].selectors[j].replace(re, &amp;#39;$1.$2&amp;#39;) } } // 圧縮するなら  // file.contents = new Buffer(css.stringify(parsed, {compress: true}))  this.push(file) callback() })) .pipe(gulp.dest(&amp;#39;/PATH/TO/DEST&amp;#39;)) }); </description>
+    </item>
+    
+    <item>
+      <title>コンテンツが少なくてもフッターをブラウザの下に配置する</title>
+      <link>https://tekiomo.com/blog/2017/10/01/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E3%81%8C%E5%B0%91%E3%81%AA%E3%81%8F%E3%81%A6%E3%82%82%E3%83%95%E3%83%83%E3%82%BF%E3%83%BC%E3%82%92%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%AE%E4%B8%8B%E3%81%AB%E9%85%8D%E7%BD%AE%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2017/10/01/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E3%81%8C%E5%B0%91%E3%81%AA%E3%81%8F%E3%81%A6%E3%82%82%E3%83%95%E3%83%83%E3%82%BF%E3%83%BC%E3%82%92%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%AE%E4%B8%8B%E3%81%AB%E9%85%8D%E7%BD%AE%E3%81%99%E3%82%8B/</guid>
+      <description>コンテンツが少なくてフッターの下に空白ができてしまうときの対処。
+ヘッダーとフッターの高さが固定されているときにしか利用できないけれども。
+HTMLはこんな感じを想定
+&amp;lt;header&amp;gt; ヘッダー &amp;lt;/header&amp;gt; &amp;lt;div id=&amp;#34;main&amp;#34;&amp;gt; コンテンツ &amp;lt;/div&amp;gt; &amp;lt;footer&amp;gt; ヘッダー &amp;lt;/footer&amp;gt; #mainのheightをmin-heightとcalc()で指定する。
+header { height: 50px; } #main { min-height: calc(100vh - 50px - 50px); } footer { height: 50px; }</description>
+    </item>
+    
+  </channel>
+</rss>

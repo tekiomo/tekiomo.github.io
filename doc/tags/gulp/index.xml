@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gulp on テキオモの部屋</title>
+    <link>https://tekiomo.com/tags/gulp/</link>
+    <description>Recent content in Gulp on テキオモの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Oct 2017 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://tekiomo.com/tags/gulp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GulpでHTMLに使ってはいけないクラス名が含まれていないかチェックする</title>
+      <link>https://tekiomo.com/blog/2017/10/28/gulp%E3%81%A7html%E3%81%AB%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84%E3%82%AF%E3%83%A9%E3%82%B9%E5%90%8D%E3%81%8C%E5%90%AB%E3%81%BE%E3%82%8C%E3%81%A6%E3%81%84%E3%81%AA%E3%81%84%E3%81%8B%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sat, 28 Oct 2017 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2017/10/28/gulp%E3%81%A7html%E3%81%AB%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84%E3%82%AF%E3%83%A9%E3%82%B9%E5%90%8D%E3%81%8C%E5%90%AB%E3%81%BE%E3%82%8C%E3%81%A6%E3%81%84%E3%81%AA%E3%81%84%E3%81%8B%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%81%99%E3%82%8B/</guid>
+      <description>下記の例はjQueryUIが付加するようなクラス名(ui-*から始まるような)が含まれていたらエラーにする。
+var gulp = require(&amp;#39;gulp&amp;#39;); var cheerio = require(&amp;#39;gulp-cheerio&amp;#39;); var through2 = require(&amp;#39;through2&amp;#39;) var gulpUtil = require(&amp;#39;gulp-util&amp;#39;) gulp.task(&amp;#39;html-validator&amp;#39;, function() { gulp.src([ &amp;#39;/PATH/TO/**/*.html&amp;#39;, ]) .pipe(cheerio({ run: function($, file) { var elements = $(&amp;#39;[class^=&amp;#34;ui-&amp;#34;], [class*=&amp;#34; ui-&amp;#34;]&amp;#39;) if (elements.length === 0) { return; } var matches = elements.attr(&amp;#39;class&amp;#39;).match(/\b(ui-[^ ]+)/g) var invalidClass = {}; for (var i in matches) { invalidClass[&amp;#39;&amp;#34;&amp;#39; + matches[i] + &amp;#39;&amp;#34;&amp;#39;] = true; } gulpUtil.log(gulpUtil.colors.red(&amp;#39;Can not use class name &amp;#39; + Object.</description>
+    </item>
+    
+    <item>
+      <title>GulpでCSSファイルのセレクタのHTMLタグ名をclass名に置き換える</title>
+      <link>https://tekiomo.com/blog/2017/10/05/gulp%E3%81%A7css%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%BF%E3%81%AEhtml%E3%82%BF%E3%82%B0%E5%90%8D%E3%82%92class%E5%90%8D%E3%81%AB%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%E3%82%8B/</link>
+      <pubDate>Thu, 05 Oct 2017 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2017/10/05/gulp%E3%81%A7css%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%BF%E3%81%AEhtml%E3%82%BF%E3%82%B0%E5%90%8D%E3%82%92class%E5%90%8D%E3%81%AB%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%E3%82%8B/</guid>
+      <description>独自タグfooをclass.fooに置き換えたかったので、through2を使って書いてみた
+var gulp = require(&amp;#39;gulp&amp;#39;); var css = require(&amp;#39;css&amp;#39;) var through2 = require(&amp;#39;through2&amp;#39;) gulp.task(&amp;#39;imagemin&amp;#39;, function(){ return gulp.src([&amp;#39;/PATH/TO/CSSFILE&amp;#39;]) .pipe(through2.obj(function (file, enc, callback) { var re = new RegExp(&amp;#39;(^|\\s+)([a-z]+(?=(?:\\s+|:|\\.|\\s*(?:$|,))))&amp;#39;, &amp;#39;g&amp;#39;) var parsed = css.parse(file.contents.toString(&amp;#39;utf8&amp;#39;)) for (var i in parsed.stylesheet.rules) { for (var j in parsed.stylesheet.rules[i].selectors) { parsed.stylesheet.rules[i].selectors[j] = parsed.stylesheet.rules[i].selectors[j].replace(re, &amp;#39;$1.$2&amp;#39;) } } // 圧縮するなら  // file.contents = new Buffer(css.stringify(parsed, {compress: true}))  this.push(file) callback() })) .pipe(gulp.dest(&amp;#39;/PATH/TO/DEST&amp;#39;)) }); </description>
+    </item>
+    
+  </channel>
+</rss>
