@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on テキオモの部屋</title>
+    <link>https://tekiomo.com/tags/git/</link>
+    <description>Recent content in Git on テキオモの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 May 2018 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://tekiomo.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>tigが&#39;local&#39; is no longer supported for date-display, use the &#39;date-local&#39; column optionというワーニングを吐くようになってしまった</title>
+      <link>https://tekiomo.com/blog/2018/05/07/tig%E3%81%8Clocal-is-no-longer-supported-for-date-display-use-the-date-local-column-option%E3%81%A8%E3%81%84%E3%81%86%E3%83%AF%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%92%E5%90%90%E3%81%8F%E3%82%88%E3%81%86%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%97%E3%81%BE%E3%81%A3%E3%81%9F/</link>
+      <pubDate>Mon, 07 May 2018 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2018/05/07/tig%E3%81%8Clocal-is-no-longer-supported-for-date-display-use-the-date-local-column-option%E3%81%A8%E3%81%84%E3%81%86%E3%83%AF%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%92%E5%90%90%E3%81%8F%E3%82%88%E3%81%86%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%97%E3%81%BE%E3%81%A3%E3%81%9F/</guid>
+      <description>tig終了時にtig warning: ~/.tigrc:10: &#39;local&#39; is no longer supported for date-display, use the &#39;date-local&#39; column optionというワーニングを吐くようになってしまった。
+該当箇所はこんな感じ
+set main-view = id:yes date:local author:full commit-title:graph=yes,refs=yes  どうやら手元のtigがアップデートされlocalは値の指定が必須になったらしい。
+- set main-view = id:yes date:local author:full commit-title:graph=yes,refs=yes + set main-view = id:yes date:local=yes author:full commit-title:graph=yes,refs=yes  https://github.com/jonas/tig/blob/master/tigrc
+ワーニングが出なくなった。</description>
+    </item>
+    
+  </channel>
+</rss>

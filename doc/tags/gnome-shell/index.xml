@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GNOME Shell on テキオモの部屋</title>
+    <link>https://tekiomo.com/tags/gnome-shell/</link>
+    <description>Recent content in GNOME Shell on テキオモの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 May 2018 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://tekiomo.com/tags/gnome-shell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>削除できずに残り続けるGNOME拡張を消せた</title>
+      <link>https://tekiomo.com/blog/2018/05/03/%E5%89%8A%E9%99%A4%E3%81%A7%E3%81%8D%E3%81%9A%E3%81%AB%E6%AE%8B%E3%82%8A%E7%B6%9A%E3%81%91%E3%82%8Bgnome%E6%8B%A1%E5%BC%B5%E3%82%92%E6%B6%88%E3%81%9B%E3%81%9F/</link>
+      <pubDate>Thu, 03 May 2018 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2018/05/03/%E5%89%8A%E9%99%A4%E3%81%A7%E3%81%8D%E3%81%9A%E3%81%AB%E6%AE%8B%E3%82%8A%E7%B6%9A%E3%81%91%E3%82%8Bgnome%E6%8B%A1%E5%BC%B5%E3%82%92%E6%B6%88%E3%81%9B%E3%81%9F/</guid>
+      <description>GNOMEの拡張を削除するにはOSがデフォルトの状態の場合、Firefoxで Installed Extensions - GNOME Shell Extensions のページで削除できる。
+各拡張ごとにある❌ボタンをクリックすれば削除できるのだが、削除できるのは$HOME/.local/share/gnome-shell/extensions/以下にインストールされた拡張のみである。
+ページに表示される拡張は上記のディレクトリにあるものの他に/usr/share/gnome-shell/extensions以下にある拡張も対象なのだが、後者は❌ボタンをクリックしても削除できずに残り続ける。
+そのため直接rmで削除した。
+sudo rm /usr/share/gnome-shell/extensions/EXTENSION_NAME 今のところ問題はなさそう。</description>
+    </item>
+    
+    <item>
+      <title>GNOME Vagrant Indicatorが便利</title>
+      <link>https://tekiomo.com/blog/2017/10/09/gnome-vagrant-indicator%E3%81%8C%E4%BE%BF%E5%88%A9/</link>
+      <pubDate>Mon, 09 Oct 2017 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2017/10/09/gnome-vagrant-indicator%E3%81%8C%E4%BE%BF%E5%88%A9/</guid>
+      <description>GNOME Vagrant Indicator - GNOME Shell Extensions
+端末内のVagrantに対してup, halt, sshなどが簡単に実行できる。
+起動中のVagrantの確認にも利用できるので便利。</description>
+    </item>
+    
+  </channel>
+</rss>

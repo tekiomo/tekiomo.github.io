@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CoffeeScript on テキオモの部屋</title>
+    <link>https://tekiomo.com/tags/coffeescript/</link>
+    <description>Recent content in CoffeeScript on テキオモの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Oct 2017 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://tekiomo.com/tags/coffeescript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>jekyll-coffeescriptで unexpected - エラーをある程度解決する</title>
+      <link>https://tekiomo.com/blog/2017/10/07/jekyll-coffeescript%E3%81%A7-unexpected-%E3%82%A8%E3%83%A9%E3%83%BC%E3%82%92%E3%81%82%E3%82%8B%E7%A8%8B%E5%BA%A6%E8%A7%A3%E6%B1%BA%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2017/10/07/jekyll-coffeescript%E3%81%A7-unexpected-%E3%82%A8%E3%83%A9%E3%83%BC%E3%82%92%E3%81%82%E3%82%8B%E7%A8%8B%E5%BA%A6%E8%A7%A3%E6%B1%BA%E3%81%99%E3%82%8B/</guid>
+      <description>GitHub Pagesでjekyll-coffeescriptプラグインを利用すると、デプロイ時に*.coffeeを.jsに変換してくれる。
+しかし、jekyll-coffeescriptの記法として、各coffeeファイルの先頭には
+--- ---  を書く必要がある。
+これがcoffeelin時に
+✗ #1: [stdin]:1:3: error: unexpected -  のようなエラーになるのでどうにか解決したい。
+とりあえずの解決方法 コンパイル対象のcoffeeファイルだけ目をつぶって、それ以外のファイルに影響を及ぼさないようにする。
+まず、coffeelintの対象となるメインのcoffeeファイルを./_include以下に置く。
+今回は、 ./include/coffeescript/main.coffeeとした。これにじっくりとcoffeeのソースを書く。
+そしてHTMLから読み込まれるcoffeeファイルを./site.coffeeとして下記の内容にする。
+--- --- {% raw %} {% include coffeescript/main.coffee %} {% endraw %}  もっといい解決方法はないかな&amp;hellip;。</description>
+    </item>
+    
+  </channel>
+</rss>

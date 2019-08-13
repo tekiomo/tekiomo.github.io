@@ -1,0 +1,23 @@
+---
+title: "邦画「ミュージアム」(2016)をAmazonプライムビデオで見た"
+date: 2018-05-04T00:00:00+09:00
+tags: [映画]
+---
+
+[![](https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=B01NC3CF97&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL600_&tag=tekiomomono-22)](https://www.amazon.co.jp/gp/product/B01NC3CF97/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B01NC3CF97&linkCode=as2&tag=tekiomomono-22&linkId=87d0126d16b93e49922e14130c10064b)
+![](https://ir-jp.amazon-adsystem.com/e/ir?t=tekiomomono-22&l=am2&o=9&a=B01NC3CF97)
+
+邦画「ミュージアム」(2016)をAmazonプライムビデオで視聴したのでその所感
+
+> [ミュージアム](https://www.amazon.co.jp/gp/product/B01NC3CF97/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B01NC3CF97&linkCode=as2&tag=tekiomomono-22&linkId=2071a77570a8c285c250dc1af92e6c84)
+>
+> 雨の日だけに発生する猟奇殺人事件。死体を見せることにこだわる犯人・カエル男は、自分をアーティストと呼び、犯行現場には必ず謎のメモを残す。連続する事件の関連性に気付いた刑事・沢村と部下の西野が、捜査を進めると、驚愕の次のターゲットが浮かび上がる。カエル男の罠にはまり、逆に追い詰められていく沢村。謎の“私刑”執行アーティスト・カエル男は一体誰なのか？その本当の目的とは？そして、沢村が絶望の密室（ミュージアム）で見たものとは…！？あなたは最悪のラストを期待する。※本編終了後特典映像あり Rating G (C) 円亮介/講談社 (C) 2016映画「ミュージアム」製作委員会
+>
+> 主演: 小栗旬, 尾野真千子, 野村周平
+>
+> 上映時間: 2時間, 19分
+
+## 所感
+* カエルの人が強い
+* グロい
+* 雨の日が多い

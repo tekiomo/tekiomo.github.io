@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IE on テキオモの部屋</title>
+    <link>https://tekiomo.com/tags/ie/</link>
+    <description>Recent content in IE on テキオモの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 May 2017 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://tekiomo.com/tags/ie/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ubuntu, MacでWindows IEの動作を確認する</title>
+      <link>https://tekiomo.com/blog/2017/05/01/ubuntu-mac%E3%81%A7windows-ie%E3%81%AE%E5%8B%95%E4%BD%9C%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2017/05/01/ubuntu-mac%E3%81%A7windows-ie%E3%81%AE%E5%8B%95%E4%BD%9C%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B/</guid>
+      <description>Microsoftが提供しているOVAイメージを利用する。
+
+zip形式で配布されているのでunzipして開くだけ。</description>
+    </item>
+    
+  </channel>
+</rss>

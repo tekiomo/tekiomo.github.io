@@ -1,0 +1,7 @@
+[about]
+logo = "https://pbs.twimg.com/profile_images/807546086109761538/CYvmcq0I_400x400.jpg"
+
+[recent_posts]
+title = "最近の投稿"
+length = 10
+excludeTypes = ["page"]

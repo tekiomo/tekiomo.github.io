@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>npm on テキオモの部屋</title>
+    <link>https://tekiomo.com/tags/npm/</link>
+    <description>Recent content in npm on テキオモの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Nov 2017 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://tekiomo.com/tags/npm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>stylelintプラグインでdoiuseのチェック</title>
+      <link>https://tekiomo.com/blog/2017/11/07/stylelint%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%A7doiuse%E3%81%AE%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF/</link>
+      <pubDate>Tue, 07 Nov 2017 00:00:00 +0900</pubDate>
+      
+      <guid>https://tekiomo.com/blog/2017/11/07/stylelint%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%A7doiuse%E3%81%AE%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF/</guid>
+      <description>doiuseはCSSのスタイルが指定したブラウザでサポートしてくれるかチェックしてくれる。
+doiuseはnpmでも公開されているのでnpm-scriptsなりgulpなりでチェック環境を作れるのだけれども、stylelintのプラグインであるstylelint-no-unsupported-browser-featuresを利用して、stylelintに含めることができるのでやってみた。
+https://github.com/ismay/stylelint-no-unsupported-browser-features
+$ npm i -D stylelint stylelint-no-unsupported-browser-features # stylelint-config-standard を使うなら $ npm i -D stylelint-config-standard ./.stylelintrcはこんな感じ
+# ./.stylelintrc { &amp;#34;extends&amp;#34;: &amp;#34;stylelint-config-standard&amp;#34;, &amp;#34;plugins&amp;#34;: [ &amp;#34;stylelint-no-unsupported-browser-features&amp;#34; ], &amp;#34;rules&amp;#34;: { &amp;#34;plugin/no-unsupported-browser-features&amp;#34;: [true, { &amp;#34;browsers&amp;#34;: [&amp;#34;&amp;gt; 1% in JP&amp;#34;] }] } } 実行はこんな感じ。stylelintの実行と変わらない。
+$ ./node_modules/.bin/stylelint /PATH/TO/CSS/* browsersを含めていると何故かstylelintのプロセスが終了しない。(環境は node v7.10.1, npm 5.5.1)
+./browserslistに定義してあげるととりあえず動いた。
+# ./browserslist &amp;gt; 1% in JP  </description>
+    </item>
+    
+  </channel>
+</rss>
