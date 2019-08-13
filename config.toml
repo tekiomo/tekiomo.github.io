@@ -2,6 +2,8 @@ languageCode = "en-us"
 
 baseURL = "https://tekiomo.com/"
 title = "テキオモの部屋"
+
+publishDir = "doc"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
