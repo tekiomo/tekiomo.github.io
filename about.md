@@ -13,15 +13,17 @@ hero:
 * GNOME3
 
 ### 主に書いているもの
-* JavaScript
+* TypeScript
 
 ### たまに書いているもの
 * Go
+* SCSS
+* JavaScript
+* CoffeeScript
+
+### ごくたまに書いているもの
 * PHP
 * Python
-* SCSS
-* Shell Script
-* TypeScript
 
 ## 働いているところ
 [ツキノワ株式会社](http://tsukinowa.jp/)
