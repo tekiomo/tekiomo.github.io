@@ -1,4 +1,5 @@
 ---
+title: FirefoxとChromeのCSP違反時の報告内容を調べてみた
 layout: post
 tags: [HTTP]
 ---

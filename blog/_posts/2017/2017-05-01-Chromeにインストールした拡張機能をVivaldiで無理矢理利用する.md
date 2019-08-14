@@ -1,4 +1,5 @@
 ---
+title: Chromeにインストールした拡張機能をVivaldiで無理矢理利用する
 layout: post
 tags: [Chrome]
 ---

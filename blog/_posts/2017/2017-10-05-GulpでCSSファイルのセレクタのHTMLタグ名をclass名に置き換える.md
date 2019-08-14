@@ -1,4 +1,5 @@
 ---
+title: GulpでCSSファイルのセレクタのHTMLタグ名をclass名に置き換える
 layout: post
 tags: [CSS, JavaScript, Gulp]
 ---

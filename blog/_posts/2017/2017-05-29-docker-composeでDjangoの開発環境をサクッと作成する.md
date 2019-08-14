@@ -1,4 +1,5 @@
 ---
+title: docker-composeでDjangoの開発環境をサクッと作成する
 layout: post
 tags: [Django, Docker]
 ---

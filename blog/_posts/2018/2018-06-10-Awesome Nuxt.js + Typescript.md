@@ -1,4 +1,5 @@
 ---
+title: Awesome Nuxt.js + Typescript
 layout: post
 tags: [TypeScript, Nuxt.js]
 ---

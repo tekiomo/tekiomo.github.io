@@ -1,4 +1,5 @@
 ---
+title: PuppeteerでMoneyForwardの口座情報をCLIから更新するツールを作ってみた。さらにGASとWerckerで定期実行環境も作ってみた
 layout: post
 tags: [JavaScript]
 ---

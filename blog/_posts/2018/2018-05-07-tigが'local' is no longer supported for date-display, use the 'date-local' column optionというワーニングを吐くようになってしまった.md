@@ -1,4 +1,5 @@
 ---
+title: tigが'local' is no longer supported for date-display, use the 'date-local' column optionというワーニングを吐くようになってしまった
 layout: post
 tags: [Git]
 ---

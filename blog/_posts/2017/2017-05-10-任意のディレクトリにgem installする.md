@@ -1,4 +1,5 @@
 ---
+title: 任意のディレクトリにgem installする
 layout: post
 tags: [Ruby]
 ---

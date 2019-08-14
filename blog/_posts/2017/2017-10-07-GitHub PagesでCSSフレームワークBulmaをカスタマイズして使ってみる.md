@@ -1,4 +1,5 @@
 ---
+title: GitHub PagesでCSSフレームワークBulmaをカスタマイズして使ってみる
 layout: post
 tags: [CSS, GitHub Pages]
 ---
