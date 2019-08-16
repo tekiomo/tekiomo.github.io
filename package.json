@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.md",
   "scripts": {
-    "test": "yarn run lint",
-    "lint": "yarn run lint:stylelint && yarn run lint:coffeelint",
+    "test": "npm run lint",
+    "lint": "npm run lint:stylelint && npm run lint:coffeelint",
     "lint:coffeelint": "coffeelint _includes/coffeescript/*",
     "lint:stylelint": "stylelint _sass/*.scss"
   },
@@ -24,8 +24,8 @@
   },
   "homepage": "https://tekiomo.com/",
   "devDependencies": {
-    "coffeelint": "^2.0.6",
-    "stylelint": "^8.2.0",
-    "stylelint-config-standard": "^17.0.0"
+    "coffeelint": "^2.1.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0"
   }
 }

@@ -11,7 +11,7 @@ test-bundle:
         channel: dev
 
 test-npm:
-  box: node:7.10
+  box: node:10.13.0
   steps:
     - npm-install
     - script:
