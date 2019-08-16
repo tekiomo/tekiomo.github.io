@@ -24,8 +24,8 @@
   },
   "homepage": "https://tekiomo.com/",
   "devDependencies": {
-    "coffeelint": "^2.0.6",
-    "stylelint": "^8.2.0",
-    "stylelint-config-standard": "^17.0.0"
+    "coffeelint": "^2.1.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0"
   }
 }
