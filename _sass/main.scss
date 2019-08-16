@@ -60,6 +60,14 @@ body {
 
 #main {
   margin-top: 52px;
+
+  a[href^="https://www.amazon.co.jp/"] {
+    img {
+      display: block;
+      padding: 10px;
+      background: $white;
+    }
+  }
 }
 
 .hero {
@@ -84,14 +92,6 @@ body {
     .hero-body {
       padding: 1rem 1.5rem;
     }
-  }
-}
-
-a[href^="https://www.amazon.co.jp/"] {
-  img {
-    display: block;
-    padding: 10px;
-    background: $white;
   }
 }
 
