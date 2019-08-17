@@ -1,9 +1,9 @@
-version: '2'
+version: '3'
 services:
-  web:
-    build: .
-    command: jekyll serve --watch
-    volumes:
-      - .:/www
+  jekyll:
+    image: starefossen/github-pages
     ports:
       - "4000:4000"
+    volumes:
+      - ./:/usr/src/app
+    tty: true
